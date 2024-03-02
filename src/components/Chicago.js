@@ -1,22 +1,25 @@
-import styled from "styled-components";
-const RestaurantLocation = styled.h4`
-    color:#EDEFEE;
-    font-size:20px;
-    margin-top:-20px;
-    padding-top:0;
-`;
-const RestaurantDescription = styled.p`
-    color:#EDEFEE;
-    font-size:0.8rem;
-    padding-top:0;
-`
+import restaurant from "../pictures/restaurant.jpg";
+import restaurant_staff from "../pictures/Mario and Adrian A.jpg";
 const Chicago = () => {
     return(
-        <>
-        <RestaurantLocation>Chicago</RestaurantLocation>
-        <RestaurantDescription>We are a family owned Mediterranean<br/> restaurant, focused on traditional recipes<br/>served with a modern twist.
-        </RestaurantDescription>
-        </>
+       <section className="chicago-description">
+        <div className="chicago-left">
+        <h2 className="chicago-title">Little Lemon</h2>
+            <h4 className="chicago-sub-title">Chicago</h4>
+            <p>Nestled in the heart of bustling Chicago, Little Lemon is where modern flair meets cozy nostalgia. Our diverse, artisanal menu, featuring delectable bruschettas, succulent burgers, and refreshing Greek salads, is a testament to our belief that food is an art. Crafted by expert chefs with locally-sourced ingredients, our dishes not only delight the palate but nourish the soul. Whether you're seeking a romantic dinner, a family meal, or a relaxed atmosphere with friends, Little Lemon is your ideal culinary destination. Find us in the heart of Chicago for an unforgettable experience.</p>
+        </div>
+           <div className="chicago-right">
+            <div className="chicago-image-container">
+            <div className="chicago-image-container-top">
+                    <img src={restaurant_staff} alt="restaurant" className="chicago-picture-1"/>
+                </div>
+                <div className="chicago-image-container-bottom">
+                    <img src={restaurant} alt="restaurant" className="chicago-picture-2"/>
+                </div>
+            </div>
+                
+           </div>
+       </section>
     )
 }
 

@@ -1,6 +1,4 @@
-import {Routes, Route,Link} from 'react-router-dom';
-import Homepage from './Homepage.js';
-import About from './About.js';
+import {Link} from 'react-router-dom';
 import logo from './Logo.svg';
 function Nav(){
     const links = [
@@ -34,9 +32,10 @@ function Nav(){
           },
       ];
     return(
-        <>
-            <nav className='nav'>
-                <img src={logo} alt='' className='nav-left'/>
+        <header>
+          <div className='header-logo'>
+            <img src={logo} alt='' className='logo-image'/>
+          </div>
                 <div className='nav-right'>
                 {links.map((link) => {
                   return(
@@ -46,17 +45,7 @@ function Nav(){
                   )
                 })}
                 </div>
-            </nav>
-        <Routes>
-                <Route path='/' element={<Homepage />}></Route>
-                <Route path='/about' element={<About />}></Route>
-                {/* <Route path='/menu' element={<Menu />}></Route> */}
-                {/* <Route path='/reservations' element={<Reservations />}></Route> */}
-                {/* <Route path='/order-online' element={<OrderOnline />}></Route> */}
-                {/* <Route path='/login' element={<Login />}></Route> */}
-
-        </Routes>
-        </>
+        </header>
     )
 }
 

@@ -34,9 +34,9 @@ const Specials = () => {
             <div className='specials-up'>
                 <h2 className='specials-title'>Specials</h2>
                 <div className='specials-button-container'>
-                <Button onClick={handleClick}>
-                    Online Menu
-                </Button>
+                    <button onClick={handleClick} className='specials-button'>
+                        Online Menu
+                    </button>
                 </div>
             </div>
             <div className='specials-bottom'>
@@ -52,7 +52,6 @@ const Specials = () => {
                 ))}
             </artical>
             </div>
-            
         </section>
     )
 }

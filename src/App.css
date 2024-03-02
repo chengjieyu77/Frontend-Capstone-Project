@@ -1,90 +1,134 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.sub-title {
+.title {
   font-size: 3rem;
   color: #F4CE14;
 }
 
-.nav {
+.sub-title {
+  color: #EDEFEE;
+  font-size: 20px;
+  margin-top: -20px;
+  padding-top: 0;
+}
+
+p {
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
-
+  width: 100%;
 }
 
-.nav-right,
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  gap: 2rem;
+  width: 100%;
+  background-color: #EDEFEE;
+}
+
 .nav-items {
-  padding: 0.35rem;
+  margin-left: 1.5rem;
   font-weight: bold;
 }
+
+.nav-right {
+  text-align: right;
+  flex: 1;
+}
+
+
 
 .callToAction {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
   background-color: #495E57;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
 
 }
 
 
 .callToAction-right {
-  width: 30%;
-  padding: 1rem;
-  flex: 1;
+  width: 23rem;
 }
 
 .callToAction-image {
-  width: 15rem;
-  height: 15rem;
-  margin-left: 3rem;
+  max-width: 100%;
+  max-height: 100%;
+  align-self: flex-end;
+  border-radius: 16px;
+
 }
 
 .callToAction-left {
   flex: 1;
   display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.restaurant-description {
+  color: #EDEFEE;
+  padding-top: 0;
+  overflow-wrap: break-word;
+}
+
+button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 16px;
+  outline: 0;
+  border: 0;
+  margin: 0px 0px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 250ms;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: #495E57;
+    color: white;
+  }
+
+  &:active {
+    background-color: #EE9972;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
 }
 
 .specials {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
+}
+
+.specials-up {
+  display: flex;
+  align-items: center;
+}
+
+.specials-title {
+  flex: 1;
+  font-size: 3rem;
+}
+
+.specials-button {
+  flex: 1;
 }
 
 .specials-bottom {
@@ -93,22 +137,208 @@
   align-items: center;
 }
 
-.specials-up {
-  display: flex;
-  margin-left: 3.4rem;
-  margin-right: 3.4rem;
-}
-
-.specials-title {
-  flex: 1;
-}
-
-.specials-button-container {
-  flex: 1;
-}
 
 .specials-cards {
   display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
+}
+
+.testimonials {
+  background-color: #495E57;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.testimonial-title {
+  text-align: center;
+  color: #EDEFEE;
+  font-size: 3rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  flex: 1;
+  background-color: #efefef;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.customers-name-pic {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewer-image {
+  width: 8rem;
+  height: 8rem;
+}
+
+.testimonial-subtitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.chicago-title {
+  color: black;
+  font-size: 3rem;
+}
+
+.chicago-sub-title {
+  color: black;
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+.chicago-description {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+.chicago-left {
+  flex: 1;
+}
+
+.chicago-right {
+  flex: 1;
+  margin: 0 auto;
+}
+
+
+.chicago-image-container-top {
+  position: absolute;
+  z-index: 1;
+  width: 30rem;
+  padding-top: 2rem;
+
+}
+
+.chicago-image-container-bottom {
+  position: relative;
+  z-index: 0;
+  width: 30rem;
+  margin-top: 4rem;
+  margin-left: 12rem;
+}
+
+.chicago-picture-1 {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.chicago-picture-2 {
+  width: 100%;
+  border-radius: 16px;
+}
+
+footer {
+  background-color: #495E57;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.footer-logo-image {
+  width: 30%;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-nav {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-nav-title {
+  font-weight: bold;
+  color: white;
+  font-size: larger;
+}
+
+li {
+  line-height: 150%;
+  font-size: 16px;
+  color: #EDEFEE
+}
+
+.footer-nav-item {
+  color: #EDEFEE;
+}
+
+section,
+footer,
+nav {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width:960px) {
+  .specials-cards {
+    flex-direction: column;
+  }
+
+  .chicago-description {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .header-logo {
+    display: none;
+  }
+
+  .specials-cards {
+    flex-direction: column;
+  }
+
+  .chicago-description {
+    flex-direction: column;
+  }
+
+  .callToAction {
+    flex-direction: column;
+  }
+
+  .callToAction-right {
+    width: 100%;
+  }
+
+  .callToAction-left {
+    margin-bottom: 0rem;
+  }
+
+  .callToAction-image {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+  }
+
+  section,
+  footer,
+  nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

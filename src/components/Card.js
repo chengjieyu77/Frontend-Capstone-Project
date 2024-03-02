@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledCard = styled.article`
     background-color:grey;
-    width:25%;
+    // width:25%;
     flex:1;
     border-radius: 16px;
     position: relative;
@@ -47,7 +47,7 @@ const CardPara = styled.p`
     width:100%;
     height:6rem;
     margin-top:-0.8rem;
-    font-size:0.8rem;
+    font-size:1rem;
 `;
 const CardBody = styled.div`
     background-color:#EDEFEE;
