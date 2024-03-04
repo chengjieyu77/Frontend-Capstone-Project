@@ -11,17 +11,17 @@ const Footer = () => {
             <ul className="footer-nav">
               <li className="footer-nav-title">Doormat Navigation</li>
               <li>
-                <Link to="/home" className="footer-nav-item">Home
+                <Link to="/" className="footer-nav-item">Home
                   </Link></li>
-              <li><Link to="/home" className="footer-nav-item">About
+              <li><Link to="/about" className="footer-nav-item">About
                   </Link></li>
-              <li><Link to="/home" className="footer-nav-item">Menu
+              <li><Link to="/menu" className="footer-nav-item">Menu
                   </Link></li>
-              <li><Link to="/home" className="footer-nav-item">Reservation
+              <li><Link to="/reservations" className="footer-nav-item">Reservation
                   </Link></li>
-              <li><Link to="/home" className="footer-nav-item">Order Online
+              <li><Link to="/order-online" className="footer-nav-item">Order Online
                   </Link></li>
-              <li><Link to="/home" className="footer-nav-item">Login
+              <li><Link to="/login" className="footer-nav-item">Login
                   </Link></li>
             </ul>
         </div>
