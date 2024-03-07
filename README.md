@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+## Screenshot
+### Home page
+<img src="./public/screenshot_homepage.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Reservation Page
+<img src="./public/screenshot_reservationpage.png">
 
-## Available Scripts
 
-In the project directory, you can run:
 
 ### `npm start`
 
